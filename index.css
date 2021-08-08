@@ -1,0 +1,65 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#list-box{
+    
+    min-width: 350px;
+    border: 1px solid #BFBFBF;
+  background-color: white;
+  box-shadow: 4px 4px 5px #aaaaaa;
+}
+#first{
+    text-align: center;
+    display:block;
+    font-weight: 700;
+    padding-top: 2%;
+    
+}
+
+.rows{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+}
+
+form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2%;;
+    height:30px;
+}
+
+.tasks{
+    padding-left: 4px;
+}
+
+.cut{
+    padding-right: 4px;;
+}
+
+#input{
+    width: 77.5%;
+   margin-right: 2.5%;;
+}
+
+#button{
+    text-align: center;
+    width:15%;
+    color: green;
+    background-color: white;
+}
+
+body{
+    height: 100%;
+}
+
+#first-hr{
+    background-color: black;
+    height:2px;
+}
