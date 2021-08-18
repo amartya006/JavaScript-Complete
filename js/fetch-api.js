@@ -5,7 +5,7 @@ let postBtn = document.getElementById("post");
 
 let list = document.getElementById("studentsList");
 
-// let url = 'https://api.github.com/users';
+// let url = '../amartya.txt';
 
 fetchBtn.addEventListener("click", function(){
     console.log("Started");
@@ -17,23 +17,27 @@ fetchBtn.addEventListener("click", function(){
     })
 }) 
 
+fetch("../amartya.json")
+    .then(response => response.json())
+    .then(data => console.log(data))
 
 
 
-function postData(){
-    fetch('https://jsonplaceholder.typicode.com/posts', {
-  method: 'POST',
-  body: JSON.stringify({
-    title: 'foo',
-    body: 'bar',
-    userId: 1,
-  }),
-  headers: {
-    'Content-type': 'application/json; charset=UTF-8',
-  },
-})
-  .then((response) => response.json())
-  .then((json) => console.log(json));
-}
-console.log("Start it");
-postData();
+
+// function postData(){
+//     fetch('https://jsonplaceholder.typicode.com/posts', {
+//   method: 'POST',
+//   body: JSON.stringify({
+//     title: 'foo',
+//     body: 'bar',
+//     userId: 1,
+//   }),
+//   headers: {
+//     'Content-type': 'application/json; charset=UTF-8',
+//   },
+// })
+//   .then((response) => response.json())
+//   .then((json) => console.log(json));
+// }
+// console.log("Start it");
+// postData();
